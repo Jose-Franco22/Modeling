@@ -1,0 +1,185 @@
+<site name="DELT1_DELT1-P4" pos="-0.014 0.01106 0.08021" group="5"/>
+
+<site name="DELT1_DELT1-P3" pos="0.04347 -0.03202 0.00499" group="5"/>
+
+<site name="DELT2_DELT2-P3" pos="5e-05 0.00294 0.02233" group="5"/>
+
+<site name="DELT2_DELT2-P4" pos="-0.01078 -0.00034 0.0062" group="5"/>
+
+<site name="DELT3_DELT3-P1" pos="-0.05573 0.00122 -0.02512" group="5"/>
+
+<site name="DELT3_DELT3-P2" pos="-0.07247 -0.03285 0.01233" group="5"/>
+
+<site name="SUPSP_SUPSP-P2" pos="-0.0071293297535122493 0.0061517049319610526 0.011581990794449191" group="5"/>
+
+<site name="SUPSP_SUPSP-P3" pos="-0.044 -0.01512 -0.05855" group="5"/>
+
+<site name="INFSP_INFSP-P2" pos="-0.0477596 -0.0399154 -0.00963954" group="5"/>
+
+<site name="INFSP_INFSP-P3" pos="-0.07382 -0.05476 -0.04781" group="5"/>
+
+<site name="SUBSC_SUBSC-P2" pos="-0.01831 -0.05223 -0.02457" group="5"/>
+
+<site name="SUBSC_SUBSC-P3" pos="-0.07246 -0.03943 -0.06475" group="5"/>
+
+<site name="CORB_CORB-P1" pos="0.0125 -0.04127 -0.02652" group="5"/>
+
+<site name="CORB_CORB-P2" pos="0.00483 -0.06958 -0.01563" group="5"/>
+
+<site name="TRIlong_TRIlong-P1" pos="-0.04565 -0.04073 -0.01377" group="5"/>
+
+<site name="BIClong_BIClong-P1" pos="-0.03123 -0.02353 -0.01305" group="5"/>
+
+<site name="BIClong_BIClong-P2" pos="-0.02094 -0.01309 -0.00461" group="5"/>
+
+<site name="BICshort_BICshort-P1" pos="0.01268 -0.03931 -0.02625" group="5"/>
+
+<site name="BICshort_BICshort-P2" pos="0.00093 -0.06704 -0.01593" group="5"/>
+
+<site name="ECRL-P1" pos="-0.0073 -0.2609 0.0091" group="5"/>
+
+<site name="ECRB-P1" pos="0.0135 -0.2905 0.017" group="5"/>
+
+<site name="ECU-P1" pos="0.0008 -0.2895 0.0188" group="5"/>
+
+<site name="FCR-P1" pos="0.0076 -0.2781 -0.037" group="5"/>
+
+<site name="FCU-P1" pos="0.0022 -0.2774 -0.0388" group="5"/>
+
+<site name="PL-P1" pos="0.0046 -0.2752 -0.0386" group="5"/>
+
+<site name="PT-P1" pos="0.0036 -0.2759 -0.0365" group="5"/>
+
+<site name="DELT1_DELT1-P1" pos="0.00896 -0.11883 0.00585" group="5"/>
+
+<site name="DELT1_DELT1-P2" pos="0.01623 -0.1033 -0.00412" group="5"/>
+
+<site name="DELT2_DELT2-P1" pos="0.00461 -0.13611 0.0056" group="5"/>
+
+<site name="DELT2_DELT2-P2" pos="0.00623159 -0.0641952 -0.0301843" group="5"/>
+
+<site name="DELT3_DELT3-P3" pos="0.00206 -0.07602 0.01045" group="5"/>
+
+<site name="SUPSP_SUPSP-P1" pos="0.00256 0.01063 0.02593" group="5"/>
+
+<site name="INFSP_INFSP-P1" pos="-0.00887 0.00484 0.02448" group="5"/>
+
+-
+
+<site name="SUBSC_SUBSC-P1" pos="0.01403 0.0084 -0.01331" group="5"/>
+
+<site name="CORB_CORB-P3" pos="0.00743 -0.15048 -0.00782" group="5"/>
+
+<site name="TRIlong_TRIlong-P2" pos="-0.02714 -0.11441 -0.00664" group="5"/>
+
+<site name="TRIlong_TRIlong-P3" pos="-0.03184 -0.22637 -0.01217" group="5"/>
+
+<site name="TRIlong_TRIlong-P4" pos="-0.01743 -0.26757 -0.01208" group="5"/>
+
+<site name="TRIlong_TRIlong-P1b" pos="-0.0365 -0.0044 -0.0213" group="5"/>
+
+<site name="TRIlat_TRIlat-P1" pos="-0.00599 -0.12646 0.00428" group="5"/>
+
+<site name="TRIlat_TRIlat-P2" pos="-0.02344 -0.14528 0.00928" group="5"/>
+
+<site name="TRIlat_TRIlat-P3" pos="-0.03184 -0.22637 -0.01217" group="5"/>
+
+<site name="TRIlat_TRIlat-P4" pos="-0.01743 -0.26757 -0.01208" group="5"/>
+
+<site name="TRImed_TRImed-P1" pos="-0.00838 -0.13695 -0.00906" group="5"/>
+
+<site name="TRImed_TRImed-P2" pos="-0.02601 -0.15139 -0.0108" group="5"/>
+
+<site name="TRImed_TRImed-P3" pos="-0.03184 -0.22637 -0.01217" group="5"/>
+
+<site name="TRImed_TRImed-P4" pos="-0.01743 -0.26757 -0.01208" group="5"/>
+
+<site name="ANC_ANC-P1" pos="-0.00744 -0.28359 0.00979" group="5"/>
+
+<site name="BIClong_BIClong-P3" pos="0.01921  0.02083 0.00828" group="5"/>
+
+<site name="BIClong_BIClong-P4" pos="0.02378 -0.00511 0.01201" group="5"/>
+
+<site name="BIClong_BIClong-P5" pos="0.01345 -0.02827 0.00136" group="5"/>
+
+<site name="BIClong_BIClong-P6" pos="0.01068 -0.07736 -0.00165" group="5"/>
+
+<site name="BIClong_BIClong-P7" pos="0.01703 -0.12125 0.00024" group="5"/>
+
+<site name="BIClong_BIClong-P8" pos="0.0228 -0.1754 -0.0063" group="5"/>
+
+<site name="BICshort_BICshort-P3" pos="0.01117 -0.07576 -0.01101" group="5"/>
+
+<site name="BICshort_BICshort-P4" pos="0.01703 -0.12125 -0.01079" group="5"/>
+
+<site name="BICshort_BICshort-P5" pos="0.0228 -0.1754 -0.0063" group="5"/>
+
+<site name="BRA_BRA-P1" pos="0.0068 -0.1739 -0.0036" group="5"/>
+
+<site name="BRD_BRD-P1" pos="-0.0098 -0.19963 0.00223" group="5"/>
+
+<site name="ECU-P2" pos="-0.0139 -0.032 0.0295" group="5"/>
+
+<site name="ECU-P3" pos="-0.017 -0.0543 0.0287" group="5"/>
+
+<site name="ECU-P4" pos="-0.0179 -0.0957 0.0328" group="5"/>
+
+<site name="PT-P2" pos="0.0085 -0.0337 -0.0143" group="5"/>
+
+<site name="PT-P3" pos="0.0122 -0.0652 -0.0022" group="5"/>
+
+<site name="PQ-P2" pos="0.0019 -0.2097 0.0363" group="5"/>
+
+<site name="TRIlong_TRIlong-P5" pos="-0.0219 0.01046 -0.00078" group="5"/>
+
+<site name="TRIlat_TRIlat-P5" pos="-0.0219 0.01046 -0.00078" group="5"/>
+
+<site name="TRImed_TRImed-P5" pos="-0.0219 0.01046 -0.00078" group="5"/>
+
+<site name="ANC_ANC-P2" pos="-0.02532 -0.00124 0.006" group="5"/>
+
+<site name="SUP_SUP-P3" pos="-0.0136 -0.03384 0.02013" group="5"/>
+
+<site name="BRA_BRA-P4" pos="-0.0032 -0.0239 0.0009" group="5"/>
+
+<site name="ECRL-P2" pos="0.032 -0.1346 0.0278" group="5"/>
+
+<site name="ECRL-P3" pos="0.0424 -0.2368 0.0362" group="5"/>
+
+<site name="ECRB-P2" pos="0.029 -0.1309 0.0238" group="5"/>
+
+<site name="ECRB-P3" pos="0.0355 -0.228 0.0394" group="5"/>
+
+<site name="ECU-P5" pos="-0.0142 -0.227 0.0348" group="5"/>
+
+<site name="FCR-P2" pos="0.0211 -0.2194 0.0013" group="5"/>
+
+<site name="FCU-P3" pos="0.0108 -0.2233 0.0097" group="5"/>
+
+<!-- <site name="FCU-P2" pos="0.0101 -0.1835 0.002" group="5"/> -->
+
+<site name="FCU-P2" pos="0.0095 -0.1841 0.0005" group="5"/>
+
+<site name="PL-P2" pos="0.0253 -0.2392 -0.0028" group="5"/>
+
+<site name="PT-P5" pos="0.0254 -0.1088 0.0198" group="5"/>
+
+<site name="PT-P4" pos="0.0236 -0.0934 0.0094" group="5"/>
+
+<site name="PQ-P1" pos="0.0324 -0.2 0.0196" group="5"/>
+
+<site name="SUP_SUP-P1" pos="0.00996 -0.06096 0.00075" group="5"/>
+
+<site name="SUP_SUP-P2" pos="0.01201 -0.0517 -0.00107" group="5"/>
+
+<site name="BIClong_BIClong-P10" pos="-0.00670279 -0.0291637 -0.0127257" group="5"/>
+
+<site name="BIClong_BIClong-P11" pos="-0.002 -0.0375 -0.002" group="5"/>
+
+<site name="BICshort_BICshort-P6" pos="-0.00774281 -0.0255585 -0.0131094" group="5"/>
+
+<site name="BICshort_BICshort-P7" pos="-0.002 -0.0375 -0.002" group="5"/>
+
+<site name="BRD_BRD-P2" pos="0.03577 -0.12742 0.02315" group="5"/>
+
+<site name="BRD_BRD-P3" pos="0.0419 -0.221 0.0224" group="5"/>
