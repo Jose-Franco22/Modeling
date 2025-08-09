@@ -577,4 +577,4 @@ if len(unique_removed) <= 200:
     print('\\n'.join(unique_removed))
 
 # Provide the file path for download
-print(f"\nYou can download the cleaned file at: sandbox:/mnt/data/text3.xml")
+print(f"\nYou can download the cleaned file at: text3.xml")
