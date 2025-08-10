@@ -1284,7 +1284,8 @@
             </body>
           </body>
         </body>
-        <body name="clavicleL" pos="-0.036325 0.413 0.02693">
+
+        <body name="clavicleL" pos="0.036325 0.413 -0.02693" quat="0 0 1 0">
 
 
           <site name="DELT1_DELT1-P4L" pos="0.014 0.01106 0.08021" group="5" />
@@ -1318,8 +1319,8 @@
                 <site name="left_shoulder_mimic" class="mimic" />
                 <geom name="humerus_lv" type="mesh" mesh="humerus_lv"></geom>
                 <inertial pos="       0 -0.193252        0" mass="2.34245620943902" fullinertia="0.0190007 0.00655464 0.0213276        0        0        0"></inertial>
-                <joint name="arm_flex_l" type="hinge" pos="0 0 0" axis="       0        0        1" limited="true" range=" -1.5708   1.5708" ref="0"></joint>
-                <joint name="arm_add_l" type="hinge" pos="0 0 0" axis="      -1        0        0" limited="true" range=" -2.0944   1.5708" ref="0"></joint>
+                <joint name="arm_flex_l" type="hinge" pos="0 0 0" axis="       0        0        -1" limited="true" range=" -1.5708   1.5708" ref="0"></joint>
+                <joint name="arm_add_l" type="hinge" pos="0 0 0" axis="      1        0        0" limited="true" range=" -2.0944   1.5708" ref="0"></joint>
                 <joint name="arm_rot_l" type="hinge" pos="0 0 0" axis="       0       -1        0" limited="true" range=" -1.5708   1.5708" ref="0"></joint>
 
 
@@ -1369,7 +1370,7 @@
                   <site name="left_elbow_mimic" class="mimic" />
                   <geom name="ulna_lv" type="mesh" mesh="ulna_lv"></geom>
                   <inertial pos="       0 -0.133575        0" mass="0.700143737876607" fullinertia="0.00419295 0.000874829 0.00454826        0        0        0"></inertial>
-                  <joint name="elbow_flex_l" type="hinge" pos="0 0 0" axis="-0.226047 -0.022269 0.973862" limited="true" range="       0    2.618" ref="0"></joint>
+                  <joint name="elbow_flex_l" type="hinge" pos="0 0 0" axis="0.226047 0.022269 -0.973862" limited="true" range="       0    2.618" ref="0"></joint>
 
 
                   <!-- left side changes -->
@@ -1414,7 +1415,7 @@
                     <site name="BRD_BRD-P3L" pos="-0.0419 -0.221 0.0224" group="5" />
 
                     <body name="lunateL" pos="-0.018 -0.242 0.025">
-                      <joint axis="0 0 1" name="deviationL" pos="0 0 0" range="-0.174533 0.436332" damping="0.25" />
+                      <joint axis="0 0 -1" name="deviationL" pos="0 0 0" range="-0.174533 0.436332" damping="0.25" />
                       <joint axis="1 0 0" name="flexionL" pos="0 0 0" range="-0.785398 0.785398" damping="0.25" />
                       <geom mesh="lunateL" name="lunateL" type="mesh" />
 
@@ -1429,14 +1430,14 @@
                       <body name="triquetrumL" pos="0.010784 -0.007499 -0.001289">
                         <geom mesh="triquetrumL" name="triquetrumL" type="mesh" />
                       </body>
-                      <body name="capitateL" pos="-0.003992 -0.015054 0.002327" childclass="fingers">
+                      <body name="capitateL" pos="-0.003992 -0.015054 0.002327">
                         <geom mesh="capitateL" name="capitateL" type="mesh" />
                         <site name="PL-P3L" pos="-0.0092 -0.019 -0.0175" group="5" />
                         <body name="trapeziumL" pos="-0.015293 -0.004569 -0.010308">
                           <geom mesh="trapeziumL" name="trapeziumL" type="mesh" />
                           <!-- THUMB FINGER -->
                           <body name="firstmcL" pos="-0.006 -0.005 -0.0025">
-                            <geom mesh="1mcL" name="1mc" type="mesh" />
+                            <geom mesh="1mcL" name="1mcL" type="mesh" />
                             <body name="proximal_thumbL" pos="-0.0165 -0.0292 -0.0127">
                               <geom mesh="thumbproxL" name="thumbproxL" type="mesh" />
                               <body name="distal_thumbL" pos="-0.014 -0.0259 -0.0101">
@@ -1578,36 +1579,37 @@
     <mesh name="5distph" file="../../myo_sim/meshes/5distph.stl" scale="1 1 1" />
 
 
-    <mesh name="humerus_rv" file="../../myo_sim/meshes/humerusL.stl" scale=" 1 1 1"></mesh>
-    <mesh name="ulna_rv" file="../../myo_sim/meshes/ulnaL.stl" scale=" 1  1  1"></mesh>
-    <mesh name="radius_rv" file="../../myo_sim/meshes/radiusL.stl" scale=" 1 1 1"></mesh>
-    <mesh name="lunate" file="../../myo_sim/meshes/lunateL.stl" scale="1 1 1" />
-    <mesh name="scaphoid" file="../../myo_sim/meshes/scaphoidL.stl" scale="1 1 1" />
-    <mesh name="pisiform" file="../../myo_sim/meshes/pisiformL.stl" scale="1 1 1" />
-    <mesh name="triquetrum" file="../../myo_sim/meshes/triquetrumL.stl" scale="1 1 1" />
-    <mesh name="capitate" file="../../myo_sim/meshes/capitateL.stl" scale="1 1 1" />
-    <mesh name="trapezium" file="../../myo_sim/meshes/trapeziumL.stl" scale="1 1 1" />
-    <mesh name="1mc" file="../../myo_sim/meshes/1mcL.stl" scale="1 1 1" />
-    <mesh name="thumbprox" file="../../myo_sim/meshes/thumbproxL.stl" scale="1 1 1" />
-    <mesh name="thumbdist" file="../../myo_sim/meshes/thumbdistL.stl" scale="1 1 1" />
-    <mesh name="trapezoid" file="../../myo_sim/meshes/trapezoidL.stl" scale="1 1 1" />
-    <mesh name="hamate" file="../../myo_sim/meshes/hamateL.stl" scale="1 1 1" />
-    <mesh name="2mc" file="../../myo_sim/meshes/2mcL.stl" scale="1 1 1" />
-    <mesh name="2proxph" file="../../myo_sim/meshes/2proxphL.stl" scale="1 1 1" />
-    <mesh name="2midph" file="../../myo_sim/meshes/2midphL.stl" scale="1 1 1" />
-    <mesh name="2distph" file="../../myo_sim/meshes/2distphL.stl" scale="1 1 1" />
-    <mesh name="3mc" file="../../myo_sim/meshes/3mcL.stl" scale="1 1 1" />
-    <mesh name="3proxph" file="../../myo_sim/meshes/3proxphL.stl" scale="1 1 1" />
-    <mesh name="3midph" file="../../myo_sim/meshes/3midphL.stl" scale="1 1 1" />
-    <mesh name="3distph" file="../../myo_sim/meshes/3distphL.stl" scale="1 1 1" />
-    <mesh name="4mc" file="../../myo_sim/meshes/4mcL.stl" scale="1 1 1" />
-    <mesh name="4proxph" file="../../myo_sim/meshes/4proxphL.stl" scale="1 1 1" />
-    <mesh name="4midph" file="../../myo_sim/meshes/4midphL.stl" scale="1 1 1" />
-    <mesh name="4distph" file="../../myo_sim/meshes/4distphL.stl" scale="1 1 1" />
-    <mesh name="5mc" file="../../myo_sim/meshes/5mcL.stl" scale="1 1 1" />
-    <mesh name="5proxph" file="../../myo_sim/meshes/5proxphL.stl" scale="1 1 1" />
-    <mesh name="5midph" file="../../myo_sim/meshes/5midphL.stl" scale="1 1 1" />
-    <mesh name="5distph" file="../../myo_sim/meshes/5distphL.stl" scale="1 1 1" />
+    <mesh name="humerus_lv" file="../../myo_sim/meshes/humerusL.stl" scale=" 1 1 1"></mesh>
+    <mesh name="ulna_lv" file="../../myo_sim/meshes/ulnaL.stl" scale=" 1  1  1"></mesh>
+    <mesh name="radius_lv" file="../../myo_sim/meshes/radiusL.stl" scale=" 1 1 1"></mesh>
+    
+    <mesh name="lunateL" file="../../myo_sim/meshes/lunateL.stl" scale="1 1 1" />
+    <mesh name="scaphoidL" file="../../myo_sim/meshes/scaphoidL.stl" scale="1 1 1" />
+    <mesh name="pisiformL" file="../../myo_sim/meshes/pisiformL.stl" scale="1 1 1" />
+    <mesh name="triquetrumL" file="../../myo_sim/meshes/triquetrumL.stl" scale="1 1 1" />
+    <mesh name="capitateL" file="../../myo_sim/meshes/capitateL.stl" scale="1 1 1" />
+    <mesh name="trapeziumL" file="../../myo_sim/meshes/trapeziumL.stl" scale="1 1 1" />
+    <mesh name="1mcL" file="../../myo_sim/meshes/1mcL.stl" scale="1 1 1" />
+    <mesh name="thumbproxL" file="../../myo_sim/meshes/thumbproxL.stl" scale="1 1 1" />
+    <mesh name="thumbdistL" file="../../myo_sim/meshes/thumbdistL.stl" scale="1 1 1" />
+    <mesh name="trapezoidL" file="../../myo_sim/meshes/trapezoidL.stl" scale="1 1 1" />
+    <mesh name="hamateL" file="../../myo_sim/meshes/hamateL.stl" scale="1 1 1" />
+    <mesh name="2mcL" file="../../myo_sim/meshes/2mcL.stl" scale="1 1 1" />
+    <mesh name="2proxphL" file="../../myo_sim/meshes/2proxphL.stl" scale="1 1 1" />
+    <mesh name="2midphL" file="../../myo_sim/meshes/2midphL.stl" scale="1 1 1" />
+    <mesh name="2distphL" file="../../myo_sim/meshes/2distphL.stl" scale="1 1 1" />
+    <mesh name="3mcL" file="../../myo_sim/meshes/3mcL.stl" scale="1 1 1" />
+    <mesh name="3proxphL" file="../../myo_sim/meshes/3proxphL.stl" scale="1 1 1" />
+    <mesh name="3midphL" file="../../myo_sim/meshes/3midphL.stl" scale="1 1 1" />
+    <mesh name="3distphL" file="../../myo_sim/meshes/3distphL.stl" scale="1 1 1" />
+    <mesh name="4mcL" file="../../myo_sim/meshes/4mcL.stl" scale="1 1 1" />
+    <mesh name="4proxphL" file="../../myo_sim/meshes/4proxphL.stl" scale="1 1 1" />
+    <mesh name="4midphL" file="../../myo_sim/meshes/4midphL.stl" scale="1 1 1" />
+    <mesh name="4distphL" file="../../myo_sim/meshes/4distphL.stl" scale="1 1 1" />
+    <mesh name="5mcL" file="../../myo_sim/meshes/5mcL.stl" scale="1 1 1" />
+    <mesh name="5proxphL" file="../../myo_sim/meshes/5proxphL.stl" scale="1 1 1" />
+    <mesh name="5midphL" file="../../myo_sim/meshes/5midphL.stl" scale="1 1 1" />
+    <mesh name="5distphL" file="../../myo_sim/meshes/5distphL.stl" scale="1 1 1" />
   </asset>
   <tendon>
     <spatial name="glut_med1_r_tendon">
@@ -2594,7 +2596,7 @@
     <joint name="mtp_angle_l_constraint" active="true" joint1="mtp_angle_l" polycoef="       0        0        0        0        0"></joint>
     <joint name="wrist_flex_r_constraint" active="true" joint1="flexion" polycoef="       0        0        0        0        0"></joint>
     <joint name="wrist_dev_r_constraint" active="true" joint1="deviation" polycoef="       0        0        0        0        0"></joint>
-    <joint name="wrist_flex_l_constraint" active="true" joint1="wrist_flex_l" polycoef="       0        0        0        0        0"></joint>
-    <joint name="wrist_dev_l_constraint" active="true" joint1="wrist_dev_l" polycoef="       0        0        0        0        0"></joint>
+    <joint name="wrist_flex_l_constraint" active="true" joint1="flexionL" polycoef="       0        0        0        0        0"></joint>
+    <joint name="wrist_dev_l_constraint" active="true" joint1="deviationL" polycoef="       0        0        0        0        0"></joint>
   </equality>
 </mujoco>
