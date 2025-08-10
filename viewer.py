@@ -9,6 +9,10 @@ model = mujoco.MjModel.from_xml_path("Loco-Mujoco/skeleton/skeleton_muscle_arm.x
 
 data = mujoco.MjData(model)
 
+# Print all actuator names
+# for i in range(model.nu):
+#     print(mujoco.mj_id2name(model, mujoco.mjtObj.mjOBJ_ACTUATOR, i))
+
 # with mujoco.viewer.launch_passive(model, data) as viewer:
 #     # Change tendon visibility on the viewer's built-in option object
 #     for i in range(6):

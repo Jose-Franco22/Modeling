@@ -723,6 +723,7 @@
                       <joint axis="0 0 1" name="deviation" pos="0 0 0" range="-0.174533 0.436332" damping="0.25" />
                       <joint axis="1 0 0" name="flexion" pos="0 0 0" range="-0.785398 0.785398" damping="0.25" />
                       <geom mesh="lunate" name="lunate" type="mesh" />
+                      <site name="right_hand_mimic" class="mimic"/>
                       <!-- <geom name="WristExtensor_wrap" pos="0.0007 0 0.003" quat="0.807649 -0.0333177 0.588355 0.0207694" class="wrap" size="0.008 0.02" type="cylinder"/>
                       <geom name="WristFlexor_wrap" pos="0 -0.01 -0.004" quat="0.807649 -0.0333177 0.588355 0.0207694" class="wrap" size="0.007 0.02" type="cylinder"/>
                       <geom name="ExtensorEllipse_ellipsoid_wrap" pos="-0.00145969 -0.0120017 -0.00892632" quat="0.977473 -0.106567 0.15459 0.0963907" class="wrap" size="0.0237409"/> -->
@@ -1439,6 +1440,7 @@
                       <joint axis="0 0 1" name="deviationL" pos="0 0 0" range="-0.436332 0.174533 " damping="0.25" />
                       <joint axis="1 0 0" name="flexionL" pos="0 0 0" range="-0.785398 0.785398" damping="0.25" />
                       <geom mesh="lunateL" name="lunateL" type="mesh" />
+                      <site name="left_hand_mimic" class="mimic"/>
 
                       <body name="scaphoidL" pos="-0.012345 -0.004464 -0.001254">
                         <geom mesh="scaphoidL" name="scaphoidL" type="mesh" />
