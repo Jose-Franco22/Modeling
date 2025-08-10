@@ -723,6 +723,7 @@
                       <joint axis="0 0 1" name="deviation" pos="0 0 0" range="-0.174533 0.436332" damping="0.25" />
                       <joint axis="1 0 0" name="flexion" pos="0 0 0" range="-0.785398 0.785398" damping="0.25" />
                       <geom mesh="lunate" name="lunate" type="mesh" />
+                      <site name="right_hand_mimic" class="mimic" />
                       <!-- <geom name="WristExtensor_wrap" pos="0.0007 0 0.003" quat="0.807649 -0.0333177 0.588355 0.0207694" class="wrap" size="0.008 0.02" type="cylinder"/>
                       <geom name="WristFlexor_wrap" pos="0 -0.01 -0.004" quat="0.807649 -0.0333177 0.588355 0.0207694" class="wrap" size="0.007 0.02" type="cylinder"/>
                       <geom name="ExtensorEllipse_ellipsoid_wrap" pos="-0.00145969 -0.0120017 -0.00892632" quat="0.977473 -0.106567 0.15459 0.0963907" class="wrap" size="0.0237409"/> -->
@@ -1284,7 +1285,8 @@
             </body>
           </body>
         </body>
-        <body name="clavicleL" pos="0.036325 0.413 -0.04693" euler="0.0 3.14 0.0">
+
+        <body name="clavicleL" pos="0.036325 0.413 -0.02693" quat="0 0 1 0">
 
 
           <site name="DELT1_DELT1-P4L" pos="0.014 0.01106 0.08021" group="5" />
@@ -1316,17 +1318,10 @@
 
               <body name="humerus_l" pos="0 0 0" quat="1.0 0.0 0.0 0.0">
                 <site name="left_shoulder_mimic" class="mimic" />
-                <body name="hum" pos="0 0 0" euler="0 -3.14 0 ">
-
                 <geom name="humerus_lv" type="mesh" mesh="humerus_lv"></geom>
-
-                </body>
-
-
-
                 <inertial pos="       0 -0.193252        0" mass="2.34245620943902" fullinertia="0.0190007 0.00655464 0.0213276        0        0        0"></inertial>
-                <joint name="arm_flex_l" type="hinge" pos="0 0 0" axis="       0        0        1" limited="true" range=" -1.5708   1.5708" ref="0"></joint>
-                <joint name="arm_add_l" type="hinge" pos="0 0 0" axis="      -1        0        0" limited="true" range=" -1.5708  2.0944   " ref="0"></joint>
+                <joint name="arm_flex_l" type="hinge" pos="0 0 0" axis="       0        0        -1" limited="true" range=" -1.5708   1.5708" ref="0"></joint>
+                <joint name="arm_add_l" type="hinge" pos="0 0 0" axis="      1        0        0" limited="true" range=" -2.0944   1.5708" ref="0"></joint>
                 <joint name="arm_rot_l" type="hinge" pos="0 0 0" axis="       0       -1        0" limited="true" range=" -1.5708   1.5708" ref="0"></joint>
 
 
@@ -1374,17 +1369,9 @@
 
                 <body name="ulna_l" pos="-0.0061 -0.2904 -0.0123" quat="1.0 0.0 0.0 0.0">
                   <site name="left_elbow_mimic" class="mimic" />
-
-
-                <body name="ul" pos="0 0 0" euler="0 -3.14 0 ">
-
-                 <geom name="ulna_lv" type="mesh" mesh="ulna_lv"></geom>
-
-                </body>
-
-                 
+                  <geom name="ulna_lv" type="mesh" mesh="ulna_lv"></geom>
                   <inertial pos="       0 -0.133575        0" mass="0.700143737876607" fullinertia="0.00419295 0.000874829 0.00454826        0        0        0"></inertial>
-                  <joint name="elbow_flex_l" type="hinge" pos="0 0 0" axis="-0.226047 -0.022269 0.973862" limited="true" range=" -2.618      0    " ref="0"></joint>
+                  <joint name="elbow_flex_l" type="hinge" pos="0 0 0" axis="0.226047 0.022269 -0.973862" limited="true" range="       0    2.618" ref="0"></joint>
 
 
                   <!-- left side changes -->
@@ -1402,14 +1389,7 @@
                   <site name="BRA_BRA-P4L" pos="0.0032 -0.0239 0.0009" group="5" />
 
                   <body name="radius_l" pos="-0.0004 -0.0115 0.02" quat="1.0 0.0 0.0 0.0">
-
-
-                  <body name="rl" pos="0 0 0" euler="0 -3.14 0 ">
-
-                  <geom name="radius_lv" type="mesh" mesh="radius_lv"></geom>
-
-                  </body>
-                    
+                    <geom name="radius_lv" type="mesh" mesh="radius_lv"></geom>
                     <inertial pos="       0 -0.133575        0" mass="0.700143737876607" fullinertia="0.00419295 0.000874829 0.00454826        0        0        0"></inertial>
                     <joint name="pro_sup_l" type="hinge" pos="0 0 0" axis="-0.056398 -0.998406 0.001952" limited="true" range="       0   1.5708" ref="0"></joint>
 
@@ -1436,9 +1416,10 @@
                     <site name="BRD_BRD-P3L" pos="-0.0419 -0.221 0.0224" group="5" />
 
                     <body name="lunateL" pos="-0.018 -0.242 0.025">
-                      <joint axis="0 0 1" name="deviationL" pos="0 0 0" range="-0.436332 0.174533 " damping="0.25" />
+                      <joint axis="0 0 -1" name="deviationL" pos="0 0 0" range="-0.174533 0.436332" damping="0.25" />
                       <joint axis="1 0 0" name="flexionL" pos="0 0 0" range="-0.785398 0.785398" damping="0.25" />
                       <geom mesh="lunateL" name="lunateL" type="mesh" />
+                      <site name="left_hand_mimic" class="mimic" />
 
                       <body name="scaphoidL" pos="-0.012345 -0.004464 -0.001254">
                         <geom mesh="scaphoidL" name="scaphoidL" type="mesh" />
@@ -1603,6 +1584,7 @@
     <mesh name="humerus_lv" file="../../myo_sim/meshes/humerusL.stl" scale=" 1 1 1"></mesh>
     <mesh name="ulna_lv" file="../../myo_sim/meshes/ulnaL.stl" scale=" 1  1  1"></mesh>
     <mesh name="radius_lv" file="../../myo_sim/meshes/radiusL.stl" scale=" 1 1 1"></mesh>
+    
     <mesh name="lunateL" file="../../myo_sim/meshes/lunateL.stl" scale="1 1 1" />
     <mesh name="scaphoidL" file="../../myo_sim/meshes/scaphoidL.stl" scale="1 1 1" />
     <mesh name="pisiformL" file="../../myo_sim/meshes/pisiformL.stl" scale="1 1 1" />
