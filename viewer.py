@@ -4,7 +4,8 @@ import mujoco.viewer
 
 # model = mujoco.MjModel.from_xml_path("myo_sim/arm/myoarm.xml") 
 # model = mujoco.MjModel.from_xml_path("Loco-Mujoco/skeleton/skeleton_muscle.xml") 
-model = mujoco.MjModel.from_xml_path("Loco-Mujoco/skeleton/skeleton_muscle_arm.xml") 
+# model = mujoco.MjModel.from_xml_path("C:/Users/ng440/Desktop/SimplifiedModel/Modeling/Loco-Mujoco/skeleton/skeleton_muscle_arm_torso_joints.xml") 
+model = mujoco.MjModel.from_xml_path("C:/Users/ng440/Desktop/SimplifiedModel/Modeling/Loco-Mujoco/skeleton/skeleton_muscle_arm_torso.xml") 
 
 
 data = mujoco.MjData(model)
