@@ -8,7 +8,6 @@
 
   <include file="../common/scene.xml" />
   <include file="../common/mimic_sites.xml" />
-  <option gravity="0 0 -0.001"/>
 
   <compiler inertiafromgeom="auto" angle="radian" balanceinertia="true" boundmass="0.001" boundinertia="0.001">
     <lengthrange inttotal="50" useexisting="true"></lengthrange>
